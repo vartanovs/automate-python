@@ -11,9 +11,7 @@ low = 1
 high = 20
 answer = random.randint(low, high)
 
-print('Well, ' + name + ', I am thinking of a number between ' + str(low) + ' and ' + str(high) + '.')
-
-print(answer)
+print(f'Well, {name}, I am thinking of a number between {low} and {high}.')
 
 # Prompt user for a guess
 for guessCount in range(1, 7):
@@ -33,7 +31,7 @@ for guessCount in range(1, 7):
   # Check guess against answer
   if guess == answer:
     # This condition is a correct guess! It breaks the loop.
-    print('Good job, '+ name +'! You guessed my number in ' + str(guessCount) + ' guesses!')
+    print(f'Good job, {name}! You guessed my number in {guessCount} guesses!')
     break
   elif guess < answer:
     print('Your guess is too low.')
@@ -41,4 +39,4 @@ for guessCount in range(1, 7):
     print('Your guess is too high.')
 
 if guess != answer:
-  print('Nope. The number I was thinking of was ' + str(answer) + '.')
+  print(f'Nope. The number I was thinking of was {answer}.')
