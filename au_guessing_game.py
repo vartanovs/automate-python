@@ -21,7 +21,7 @@ for guessCount in range(1, 7):
   # If user input triggers a ValueError, trigger a loop to force a digit input
   except ValueError:
     while True:
-      print('Please guess a digit!')
+      print(f'Please guess a number (digit) between {low} and {high}!')
       try:
         guess = int(input())
         break
